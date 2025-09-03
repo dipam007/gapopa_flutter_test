@@ -18,14 +18,14 @@ To practice the theory you may pass the [Dart Cheatsheet].
 
 After completing the steps above, you should be able to answer (and understand why) the following questions:
 - **What runtime [Dart] has? Does it use a GC (garbage collector)?**
-- Dart's compiler technology run code in different ways:
+-> Dart's compiler technology run code in different ways:
 **Dart VM (JIT / Development mode):** During development, a fast developer cycle is critical for iteration. The Dart VM offers a just-in-time compiler (JIT) with incremental recompilation (enabling hot reload), live metrics collections (powering DevTools), and rich debugging support.
 **Ahead-of-Time (AOT) compiled mode:** When apps are ready to be deployed to production, the Dart ahead-of-time (AOT) compiler can compile to native ARM or x64 machine code. In AOT mode, the runtime includes memory management (like Garbage Collection).
 **Garbage Collection:** It's optimized for UI frameworks (like Flutter), where you create and discard lots of short-lived objects (widgets, state objects, etc.). Dart’s garbage collector is generational and consists of two phases: the young space scavenger and parallel mark sweep collectors. The garbage collector can also run sliding compaction during those idle intervals, which minimizes memory overhead by reducing memory fragmentation. Young objects (short-lived, like temporary widget trees) are collected quickly. Old objects (long-lived, like app state) are promoted and collected less frequently. This keeps GC fast and efficient, avoiding noticeable UI jank.
 
 
 - **What is [Dart] VM? How [Dart] works natively and in a browser, and why?**
-- The Dart VM is the runtime environment for executing Dart programs like the JVM (Java Virtual Machine) or V8 (JavaScript engine). It provides: JIT (Just-In-Time) compilation → fast hot reload / development, Garbage Collection → automatic memory management, Native interoperability → call into C/C++ system libraries, Isolates → lightweight concurrency model (instead of shared threads).
+-> The Dart VM is the runtime environment for executing Dart programs like the JVM (Java Virtual Machine) or V8 (JavaScript engine). It provides: JIT (Just-In-Time) compilation → fast hot reload / development, Garbage Collection → automatic memory management, Native interoperability → call into C/C++ system libraries, Isolates → lightweight concurrency model (instead of shared threads).
 -> Dart supports Ahead-of-Time (AOT) compilation. In Flutter release mode, Dart code is compiled into native ARM/x64 machine code. No VM is shipped inside your mobile app → it runs like a C++ program. The Dart runtime is very small, providing just: GC, Isolate scheduler, Core libraries (dart:core, dart:async, etc.). This gives fast startup and predictable performance, close to C++.
 -> Mobile apps need smooth 60/120 FPS performance. JIT would make startup slow, and a full VM would bloat binaries. AOT → small, optimized binary, no runtime dependency.
 -> Dart does not ship a VM into the browser (unlike Java Applets or Flash, which failed).

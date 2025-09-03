@@ -18,7 +18,7 @@ To practice the theory you may pass the [Dart Cheatsheet].
 
 After completing the steps above, you should be able to answer (and understand why) the following questions:
 - **What runtime [Dart] has? Does it use a GC (garbage collector)?**
--> Dart's compiler technology run code in different ways:
+- Dart's compiler technology run code in different ways:
 **Dart VM (JIT / Development mode):** During development, a fast developer cycle is critical for iteration. The Dart VM offers a just-in-time compiler (JIT) with incremental recompilation (enabling hot reload), live metrics collections (powering DevTools), and rich debugging support.
 **Ahead-of-Time (AOT) compiled mode:** When apps are ready to be deployed to production, the Dart ahead-of-time (AOT) compiler can compile to native ARM or x64 machine code. In AOT mode, the runtime includes memory management (like Garbage Collection).
 **Garbage Collection:** It's optimized for UI frameworks (like Flutter), where you create and discard lots of short-lived objects (widgets, state objects, etc.). Dart’s garbage collector is generational and consists of two phases: the young space scavenger and parallel mark sweep collectors. The garbage collector can also run sliding compaction during those idle intervals, which minimizes memory overhead by reducing memory fragmentation. Young objects (short-lived, like temporary widget trees) are collected quickly. Old objects (long-lived, like app state) are promoted and collected less frequently. This keeps GC fast and efficient, avoiding noticeable UI jank.

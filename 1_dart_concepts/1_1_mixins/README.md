@@ -92,6 +92,7 @@ Reuse code → no need to rewrite common logic.
 Specialize behavior → override or add new methods.
 Polymorphism → treat different objects through a common type.
 This makes programs more modular, maintainable, and extensible.
+
 Example,
 class Animal {
   void speak() => print("Some sound...");

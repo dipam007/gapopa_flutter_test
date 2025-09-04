@@ -5,7 +5,7 @@ Step 1.1: Mixins and extensions
 
 
 
-
+ 
 ## Extensions
 
 [Extension methods][11] is a vital concept in [Dart], allowing to add functionality to existing types in foreign libraries.

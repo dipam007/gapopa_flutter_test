@@ -55,6 +55,30 @@ class Client {
   Future<void> connect(Server server) async {
     // TODO: Implement backoff re-connecting.
     //       Data from the [server] should be printed to the console.
+    int attempt = 0;
+    const int maxDelay = 30;
+
+    while (true) {
+      try {
+        print("🔌 Trying to connect...");
+        final stream = await server.connect();
+        print(" Connected!");
+
+        attempt = 0; // reset attempts after success
+
+        await for (final data in stream) {
+          print("Data: $data");
+        }
+      } on DisconnectedException {
+        attempt++;
+        final delay = min(pow(2, attempt).toInt(), maxDelay);
+        print("Disconnected. Retrying in $delay seconds...");
+        await Future.delayed(Duration(seconds: delay));
+      } catch (e) {
+        print("Unexpected error: $e");
+        await Future.delayed(const Duration(seconds: 5));
+      }
+    }
   }
 }
 

@@ -11,11 +11,21 @@ class Chat {
   /// [List] of messages in this [Chat].
   final List<int> messages = List.generate(30, (i) => i);
 
+  Timer? _debounceTimer;
+  int? _latestMessage;
+  
   /// Marks this [Chat] as read until the specified [message].
   void read(int message) {
     // TODO: [onRead] should be invoked no more than 1 time in a second.
-
-    onRead(message);
+    _latestMessage = message;
+    // Cancel any previously scheduled invocation
+    _debounceTimer?.cancel();
+    // Schedule a new one after 1 second
+    _debounceTimer = Timer(const Duration(seconds: 1), () {
+      if (_latestMessage != null) {
+        onRead(_latestMessage!);
+      }
+    });
   }
 }
 

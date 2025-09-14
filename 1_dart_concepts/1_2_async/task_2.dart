@@ -55,6 +55,8 @@ class Client {
   Future<void> connect(Server server) async {
     // TODO: Implement backoff re-connecting.
     //       Data from the [server] should be printed to the console.
+// Exponential backoff (1s, 2s, 4s… capped at 30s).
+// Reset of attempts when reconnected.
     int attempt = 0;
     const int maxDelay = 30;
 
@@ -83,5 +85,10 @@ class Client {
 }
 
 Future<void> main() async {
-  Client()..connect(Server()..init());
+  // Client()..connect(Server()..init());
+  final server = Server();
+  server.init();
+
+  final client = Client();
+  client.connect(server);
 }

@@ -142,7 +142,7 @@ Task_1 images proofs:
 <img width="180" height="57" alt="image" src="https://github.com/user-attachments/assets/57650720-17c3-47d3-85ee-e35519ef617a" />
 
 Task_2 images proofs: 
-<img width="180" height="116" alt="image" src="https://github.com/user-attachments/assets/ecd30bcb-2f5f-4764-b1c2-5c2370f34c1a" />
+<img width="360" height="232" alt="image" src="https://github.com/user-attachments/assets/ecd30bcb-2f5f-4764-b1c2-5c2370f34c1a" />
 
 Task_3 images proofs: 
 <img width="150" height="317" alt="image" src="https://github.com/user-attachments/assets/a4cda0d3-9aa9-438d-9417-5f2167fc3f07" />

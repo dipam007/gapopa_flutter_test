@@ -28,7 +28,7 @@ For better understanding of [generics][3] design in [Dart], their benefits and u
 Implement a method, returning the maximum element from a `Comparable` list. You must use [generics][3] to allow different types usage with that method.
 
 Task image proof: 
-<img width="360" height="172" alt="image" src="https://github.com/user-attachments/assets/25d15093-8a1a-40bb-8ecf-7f30db3ed795" />
+<img width="500" height="238" alt="image" src="https://github.com/user-attachments/assets/25d15093-8a1a-40bb-8ecf-7f30db3ed795" />
 
 
 

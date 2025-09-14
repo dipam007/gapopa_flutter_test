@@ -144,11 +144,14 @@ Task_1 images proofs:
 Task_2 images proofs: 
 <img width="180" height="116" alt="image" src="https://github.com/user-attachments/assets/ecd30bcb-2f5f-4764-b1c2-5c2370f34c1a" />
 
-
 Task_3 images proofs: 
 <img width="150" height="317" alt="image" src="https://github.com/user-attachments/assets/a4cda0d3-9aa9-438d-9417-5f2167fc3f07" />
 <img width="150" height="317" alt="image" src="https://github.com/user-attachments/assets/f3ff5bc8-2f2a-4fab-a781-d78a70ddb10f" />
 <img width="150" height="317" alt="image" src="https://github.com/user-attachments/assets/86604bc1-1427-4f96-bdfb-296af555e210" />
+
+Task_4 image proofs: 
+<img width="862" height="185" alt="image" src="https://github.com/user-attachments/assets/6a2ba185-d3ec-4bb9-bd36-02da95fa048f" />
+
 
 
 

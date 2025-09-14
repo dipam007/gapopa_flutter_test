@@ -138,6 +138,8 @@ For better understanding of [`Isolate`]'s design and usage, read through the fol
 - [`task_3.dart`](task_3.dart): implement an [`HttpServer`] writing to a `dummy.txt` file on any of its routes and returning its contents (reading from it) on another. Note, that `dummy.txt` might not exist when trying to read from it, server should respond with an error in such case.
 - [`task_4.dart`](task_4.dart): implement an algorithm calculating sum of prime numbers from 1 to N using [`Isolate`]s.
 
+Task_3 images: 
+<img width="408" height="863" alt="image" src="https://github.com/user-attachments/assets/a4cda0d3-9aa9-438d-9417-5f2167fc3f07" />
 
 
 

@@ -139,7 +139,10 @@ For better understanding of [`Isolate`]'s design and usage, read through the fol
 - [`task_4.dart`](task_4.dart): implement an algorithm calculating sum of prime numbers from 1 to N using [`Isolate`]s.
 
 Task_3 images: 
-<img width="80" height="170" alt="image" src="https://github.com/user-attachments/assets/a4cda0d3-9aa9-438d-9417-5f2167fc3f07" />
+
+<img width="150" height="317" alt="image" src="https://github.com/user-attachments/assets/a4cda0d3-9aa9-438d-9417-5f2167fc3f07" />
+<img width="150" height="317" alt="image" src="https://github.com/user-attachments/assets/f3ff5bc8-2f2a-4fab-a781-d78a70ddb10f" />
+<img width="150" height="317" alt="image" src="https://github.com/user-attachments/assets/86604bc1-1427-4f96-bdfb-296af555e210" />
 
 
 

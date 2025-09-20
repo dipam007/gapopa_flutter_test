@@ -98,7 +98,7 @@ For the [code in this step](task.dart), do the following:
 - add documentation following the "[Effective Dart: Documentation]" guidelines.
 
 
-Task image proof:
+**_Task image proof:_**
 <img width="915" height="184" alt="image" src="https://github.com/user-attachments/assets/38d5594b-501a-4560-8351-a53004deeec2" />
 
 

@@ -68,11 +68,17 @@ class ChatForwardQuote extends ChatItemQuote {
 void main() {
   ChatItem msg = ChatMessage();
   ChatItem call = ChatCall();
+  ChatItem info = ChatInfo();
+  ChatItem forward = ChatForward();
 
   final msgQuote = ChatItemQuote.from(msg);
   final callQuote = ChatItemQuote.from(call);
+  final infoQuote = ChatItemQuote.from(info);
+  final forwardQuote = ChatItemQuote.from(forward);
 
   print(msgQuote.runtimeType); // ChatMessageQuote
   print(callQuote.runtimeType); // ChatCallQuote
+  print(infoQuote.runtimeType); // ChatInfoQuote
+  print(forwardQuote.runtimeType); // ChatForwardQuote
 }
 

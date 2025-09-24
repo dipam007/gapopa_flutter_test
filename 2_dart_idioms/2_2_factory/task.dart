@@ -22,7 +22,20 @@ abstract class ChatItemQuote {
 
   /// Constructs a [ChatItemQuote] from the provided [item].
   factory ChatItemQuote.from(ChatItem item) {
-    throw UnimplementedError('Implement me');
+     final now = DateTime.now();
+
+    if (item is ChatMessage) {
+      return ChatMessageQuote(original: item, at: now);
+    } else if (item is ChatCall) {
+      return ChatCallQuote(original: item, at: now);
+    } else if (item is ChatInfo) {
+      return ChatInfoQuote(original: item, at: now);
+    } else if (item is ChatForward) {
+      return ChatForwardQuote(original: item, at: now);
+    } else {
+      throw ArgumentError('Unsupported ChatItem type: ${item.runtimeType}');
+    }
+    //throw UnimplementedError('Implement me');
   }
 
   /// Quoted [ChatItem] itself.
@@ -51,3 +64,15 @@ class ChatInfoQuote extends ChatItemQuote {
 class ChatForwardQuote extends ChatItemQuote {
   const ChatForwardQuote({required super.original, required super.at});
 }
+
+void main() {
+  ChatItem msg = ChatMessage();
+  ChatItem call = ChatCall();
+
+  final msgQuote = ChatItemQuote.from(msg);
+  final callQuote = ChatItemQuote.from(call);
+
+  print(msgQuote.runtimeType); // ChatMessageQuote
+  print(callQuote.runtimeType); // ChatCallQuote
+}
+

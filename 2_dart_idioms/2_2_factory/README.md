@@ -113,6 +113,10 @@ For better familiarity with [factory constructors][21], read through the followi
 Implement a `ChatItemQuote.from` [factory constructor][21] in the [code of this step](task.dart).
 
 
+Task Image proof:
+<img width="405" height="116" alt="image" src="https://github.com/user-attachments/assets/7540ffcc-1d57-4542-8347-8b18179b456d" />
+
+
 
 
 ## Questions
